@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #222;
+    padding: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #ccc;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #222;
+}
+
+#hero {
+    background-color: #ff9900;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#hero p {
+    font-size: 1.1em;
+}
+
+#hero button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#hero button:hover {
+    background-color: #333;
+}
+
+#services ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+#services li {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+#services li h3 {
+    margin-top: 0;
+}
+
+#services li p {
+    margin-bottom: 10px;
+}
+
+.service-btn {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.service-btn:hover {
+    background-color: #333;
+}
+
+#about, #contact, #login {
+    text-align: center;
+}
+
+#about p, #contact p, #login p {
+    margin-bottom: 20px;
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#login label {
+    margin-bottom: 5px;
+}
+
+#login input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#login button {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#login button:hover {
+    background-color: #333;
+}
