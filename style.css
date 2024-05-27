@@ -1,65 +1,203 @@
 /*--------------------
-RESET STYLES
+RESET AND BASE STYLES
 --------------------*/
 
-/* This section sets default styles for various HTML elements to ensure consistent formatting across all browsers. */
+/* Reset styles for consistent formatting across all browsers */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
-/*--------------------
-BASE STYLES
---------------------*/
-
-/* This section sets global styles for the font, line-height, and background color of the body element. */
+/* Base styles for the body element */
+body {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
 
 /*--------------------
 HEADER STYLES
 --------------------*/
 
-/* This section sets the background color, padding, and text color for the header element. It also sets the styles for the navigation menu, including the display, justification, list style, padding, and text decoration of the nav ul and nav ul li a elements. */
+/* Header background color, padding, and text color */
+header {
+    background-color: #333;
+    padding: 20px;
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
 
 /*--------------------
 MAIN STYLES
 --------------------*/
 
-/* This section sets the padding for the main element. */
+/* Main padding */
+main {
+    padding: 20px;
+}
 
 /*--------------------
 SECTION STYLES
 --------------------*/
 
-/* This section sets the margin-bottom for the section element. */
+/* Section margin-bottom */
+section {
+    margin-bottom: 20px;
+}
 
 /*--------------------
 HEADING STYLES
 --------------------*/
 
-/* This section sets the color for the h1 and h2 heading elements. */
+/* Heading colors */
+h1, h2 {
+    color: #446688;
+}
 
 /*--------------------
 HERO STYLES
 --------------------*/
 
-/* This section sets the background color, padding, text color, text alignment, and font size for the #hero element. It also sets the styles for the paragraph and button elements within the #hero element. */
+/* Hero background color, padding, text color, text alignment, and font size */
+#hero {
+    background-color: #446688;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Hero paragraph and button styles */
+#hero p,
+#hero button {
+    margin: 10px 0;
+}
 
 /*--------------------
 SERVICES STYLES
 --------------------*/
 
-/* This section sets the display, justification, padding, background color, border-radius, box-shadow, and width for the #services element and its child li elements. It also sets the styles for the h3 and p elements within each li element. */
+/* Services display, justification, padding, background color, border-radius, box-shadow, and width */
+#services {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Services list styles */
+#services li {
+    text-align: center;
+}
+
+/* Services h3 and p styles */
+#services h3,
+#services p {
+    margin: 10px 0;
+}
 
 /*--------------------
 SERVICE BUTTON STYLES
 --------------------*/
 
-/* This section sets the background color, color, padding, border, cursor, and hover effect for the .service-btn elements. */
+/* Service button background color, color, padding, border, cursor, and hover effect */
+.service-btn {
+    background-color: #446688;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.service-btn:hover {
+    background-color: #557799;
+}
 
 /*--------------------
 ABOUT, CONTACT, LOGIN STYLES
 --------------------*/
 
-/* This section sets the text alignment for the #about, #contact, and #login elements. It also sets the margin-bottom and text styles for the p elements within each of these sections. */
+/* Text alignment for #about, #contact, and #login elements */
+#about,
+#contact,
+#login {
+    text-align: center;
+}
+
+/* Paragraph margin-bottom and text styles for p elements within each of these sections */
+#about p,
+#contact p,
+#login p {
+    margin-bottom: 20px;
+    color: #446688;
+}
 
 /*--------------------
 LOGIN FORM STYLES
 --------------------*/
 
-/* This section sets the display, flex-direction, max-width, margin, and alignment for the #login form element. It also sets the styles for the label, input, and button elements within the form. */
+/* Login form display, flex-direction, max-width, margin, and alignment */
+#login {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* Label, input, and button styles within the form */
+#login label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#login input[type="text"],
+#login input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#login button {
+    background-color: #446688;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#login button:hover {
+    background-color: #557799;
+}
