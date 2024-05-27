@@ -2,8 +2,8 @@
 const serviceBtns = document.querySelectorAll('.service-btn');
 
 // Add event listener to each service button
-serviceBtns.forEach(function(btn) {
-  btn.addEventListener('click', function() {
+serviceBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
     // Get the service type from the data attribute
     const serviceType = btn.getAttribute('data-service');
 
