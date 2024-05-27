@@ -1,136 +1,65 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
+/*--------------------
+RESET STYLES
+--------------------*/
 
-header {
-    background-color: #222;
-    padding: 10px;
-}
+/* This section sets default styles for various HTML elements to ensure consistent formatting across all browsers. */
 
-header nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
-}
+/*--------------------
+BASE STYLES
+--------------------*/
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+/* This section sets global styles for the font, line-height, and background color of the body element. */
 
-header nav ul li a:hover {
-    color: #ccc;
-}
+/*--------------------
+HEADER STYLES
+--------------------*/
 
-main {
-    padding: 20px;
-}
+/* This section sets the background color, padding, and text color for the header element. It also sets the styles for the navigation menu, including the display, justification, list style, padding, and text decoration of the nav ul and nav ul li a elements. */
 
-section {
-    margin-bottom: 20px;
-}
+/*--------------------
+MAIN STYLES
+--------------------*/
 
-h1, h2 {
-    color: #222;
-}
+/* This section sets the padding for the main element. */
 
-#hero {
-    background-color: #ff9900;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-}
+/*--------------------
+SECTION STYLES
+--------------------*/
 
-#hero p {
-    font-size: 1.1em;
-}
+/* This section sets the margin-bottom for the section element. */
 
-#hero button {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
+/*--------------------
+HEADING STYLES
+--------------------*/
 
-#hero button:hover {
-    background-color: #333;
-}
+/* This section sets the color for the h1 and h2 heading elements. */
 
-#services ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-}
+/*--------------------
+HERO STYLES
+--------------------*/
 
-#services li {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 30%;
-}
+/* This section sets the background color, padding, text color, text alignment, and font size for the #hero element. It also sets the styles for the paragraph and button elements within the #hero element. */
 
-#services li h3 {
-    margin-top: 0;
-}
+/*--------------------
+SERVICES STYLES
+--------------------*/
 
-#services li p {
-    margin-bottom: 10px;
-}
+/* This section sets the display, justification, padding, background color, border-radius, box-shadow, and width for the #services element and its child li elements. It also sets the styles for the h3 and p elements within each li element. */
 
-.service-btn {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
+/*--------------------
+SERVICE BUTTON STYLES
+--------------------*/
 
-.service-btn:hover {
-    background-color: #333;
-}
+/* This section sets the background color, color, padding, border, cursor, and hover effect for the .service-btn elements. */
 
-#about, #contact, #login {
-    text-align: center;
-}
+/*--------------------
+ABOUT, CONTACT, LOGIN STYLES
+--------------------*/
 
-#about p, #contact p, #login p {
-    margin-bottom: 20px;
-}
+/* This section sets the text alignment for the #about, #contact, and #login elements. It also sets the margin-bottom and text styles for the p elements within each of these sections. */
 
-#contact p {
-    margin-bottom: 10px;
-}
+/*--------------------
+LOGIN FORM STYLES
+--------------------*/
 
-#login form {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    margin: 0 auto;
-}
-
-#login label {
-    margin-bottom: 5px;
-}
-
-#login input {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-#login button {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-#login button:hover {
-    background-color: #333;
-}
+/* This section sets the display, flex-direction, max-width, margin, and alignment for the #login form element. It also sets the styles for the label, input, and button elements within the form. */
