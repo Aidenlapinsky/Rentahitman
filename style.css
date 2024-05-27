@@ -1,30 +1,32 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
 }
 
 header {
-    background-color: #f44336;
-    padding: 20px;
-    text-align: center;
-    color: white;
+    background-color: #2d2d2d;
+    padding: 1.5rem;
 }
 
-h1 {
-    margin: 0;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-main {
-    padding: 20px;
+.logo h1 {
+    color: #ffffff;
+    font-size: 1.5rem;
 }
 
-section {
-    margin-bottom: 30px;
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1rem;
 }
 
-h2 {
-    margin-top: 0;
+.section {
+    padding: 2rem;
 }
 
 .dropdown {
@@ -33,82 +35,39 @@ h2 {
 }
 
 .dropdown-button {
-    background-color: #f44336;
-    color: white;
-    padding: 10px;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
-}
-
-.dropdown-button:hover {
-    background-color: #e53935;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
+.dropdown-content p {
+    padding: 1rem;
+}
+
 .dropdown-content ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 0.5rem;
 }
 
 .dropdown-content li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
-.dropdown-content li:last-child {
-    border-bottom: none;
+.dropdown-content li:hover {
+    background-color: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.dropdown:hover .dropdown-button {
-    background-color: #e53935;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label,
-input,
-textarea,
-button {
-    margin-bottom: 5px;
-}
-
-input,
-textarea {
-    padding: 5px;
-}
-
-button {
-    background-color: #f44336;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #e53935;
-}
-
-footer {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    margin-top: 30px;
 }
