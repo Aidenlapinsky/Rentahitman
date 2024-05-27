@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rent a Hitman - Discreet Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent a Hitman</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#login">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <h1>Rent a Hitman - Discreet Solutions</h1>
-            <p>Need someone taken care of? We've got you covered.</p>
-            <button id="get-quote-btn">Get a Quote</button>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>
-                    <h3>Standard Hit</h3>
-                    <p>$5,000</p>
-                    <p>Our most popular package. Includes one (1) discreet elimination.</p>
-                    <button class="service-btn" data-service="standard">Order Now</button>
-                </li>
-                <li>
-                    <h3>Premium Hit</h3>
-                    <p>$10,000</p>
-                    <p>Includes everything in Standard Hit, plus a personalized consultation and a complimentary "accidental" death certificate.</p>
-                    <button class="service-btn" data-service="premium">Order Now</button>
-                </li>
-                <li>
-                    <h3>Elite Hit</h3>
-                    <p>$20,000</p>
-                    <p>Our top-tier package. Includes everything in Premium Hit, plus a dedicated team of experts and a 100% satisfaction guarantee.</p>
-                    <button class="service-btn" data-service="elite">Order Now</button>
-                </li>
-            </ul>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus eros eget tellus luctus, id tristique elit sollicitudin. Duis fermentum est eu dolor malesuada, at congue urna pretium. Integer vel augue nulla. Proin auctor lacinia mi, a consectetur sapien imperdiet a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In eget sem et turpis lobortis tempus.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Phone: (555) 123-4567</p>
-            <p>Email: info@rentahitman.com</p>
-        </section>
-        <section id="login">
-            <h2>Login</h2>
-            <form>
-                <label for="username">Username:</label>
-                <input type="text" id="username" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" required>
-                <button type="submit">Login</button>
-            </form>
-        </section>
-    </main>
-    <script src="scripts.js"></script>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <h1>Rent a Hitman</h1>
+      <p>We're here to help you solve your problems.</p>
+      <button id="get-quote-btn">Get a Quote</button>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>
+          <h3>Standard Package</h3>
+          <p>$5,000</p>
+          <p>Our most popular package. Includes one (1) hit.</p>
+          <button class="service-btn" data-service="standard">Order Now</button>
+        </li>
+        <li>
+          <h3>Premium Package</h3>
+          <p>$10,000</p>
+          <p>Includes everything in the Standard Package, plus a personalized consultation and a complimentary "accidental" death certificate.</p>
+          <button class="service-btn" data-service="premium">Order Now</button>
+        </li>
+        <li>
+          <h3>Elite Package</h3>
+          <p>$20,000</p>
+          <p>Our top-tier package. Includes everything in the Premium Package, plus a dedicated team of experts and a 100% satisfaction guarantee.</p>
+          <button class="service-btn" data-service="elite">Order Now</button>
+        </li>
+      </ul>
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We're a world-class hitman service, dedicated to providing our clients with the best possible service. Our team of experts has years of experience in the industry, and we're committed to ensuring that every job is completed to the highest possible standard.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Phone: (555) 123-4567</p>
+      <p>Email: <a href="mailto:info@rentahitman.com">info@rentahitman.com</a></p>
+    </section>
+  </main>
+  <script>
+    // Get all service buttons
+    const serviceBtns = document.querySelectorAll('.service-btn');
+
+    // Add event listener to each service button
+    serviceBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        // Get the service type from the data attribute
+        const serviceType = btn.getAttribute('data-service');
+
+        // Alert the user with the service type
+        alert(`You ordered the ${serviceType} package.`);
+      });
+    });
+  </script>
 </body>
 </html>
