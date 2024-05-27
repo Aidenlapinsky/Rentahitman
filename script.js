@@ -1,14 +1,11 @@
-// Select all elements with the class 'service-btn'
-const serviceBtns = document.querySelectorAll('.service-btn');
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-// Iterate through each button in the NodeList 'serviceBtns' using 'for-of' loop
-for (const btn of serviceBtns) {
-  // Add a click event listener to each button
-  btn.addEventListener('click', () => {
-    // Get the service type from the button's 'dataset.service' property
-    const serviceType = btn.dataset.service;
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
 
-    // Display an alert to the user with the selected service type
-    alert(`You ordered the ${serviceType} package.`);
-  });
-}
+    // Send an email to [your-email@example.com](mailto:your-email@example.com) with the form data
+    const emailLink = `mailto:your-email@example.com?subject=Rent a Hitman Inquiry&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+    window.location.href = emailLink;
+});
